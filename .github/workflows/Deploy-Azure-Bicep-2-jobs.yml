@@ -12,8 +12,8 @@ on:
   workflow_dispatch:
 
 env:
-  RESOURCE_GROUP: rg-bicep-github-actions-037
-  WEBAPP_NAME: bicep-037
+  RESOURCE_GROUP: spn-azure-bicep-github
+  WEBAPP_NAME: webappbicepx
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -40,7 +40,7 @@ jobs:
           # Specify the script here
           inlineScript: |
             az version
-            az group create -n $RESOURCE_GROUP -l westeurope
+            az group create -n $RESOURCE_GROUP -l southeastasia
       - name: Preview Changes from Bicep
         uses: Azure/deployment-what-if-action@v1.0.0
         with:
