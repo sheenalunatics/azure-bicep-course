@@ -76,7 +76,7 @@ jobs:
           # Specify the script here
           inlineScript: |
             az version
-            az group create -n $RESOURCE_GROUP -l westeurope
+            az group create -n $RESOURCE_GROUP -l southeastasia
 
       - name: Deploy Bicep to Azure
         uses: azure/arm-deploy@v1
