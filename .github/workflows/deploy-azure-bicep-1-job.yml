@@ -12,8 +12,8 @@ on:
   workflow_dispatch:
 
 env:
-  RESOURCE_GROUP: rg-bicep-github-actions-29
-  WEBAPP_NAME: bicep-029
+  RESOURCE_GROUP: spn-azure-bicep-github
+  WEBAPP_NAME: webappbicepx
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
